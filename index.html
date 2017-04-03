@@ -17,7 +17,6 @@
 				font-size: 12px;
 			}
 			h1 {
-				font-weight: lighter;
 				letter-spacing: 1px;
 				font-size: 22px;
 				margin: 0 0 10px 0;
@@ -27,12 +26,6 @@
 			#show-listings {
 				width: 48%;
 			}
-			hr {
-		        	background: #D0D7D9;
-		        	height: 1px;
-		        	margin: 20px 0 20px 0;
-		        	border: none;
-		    	}
 			#map {
 				bottom: 0px;
 				height: 100%;
@@ -41,7 +34,7 @@
 				right: 0px;
 			}
 			.options-box {
-				background: url(sativa.png);
+				background: url(weather.png);
 				border: 1px solid #999;
 				border-radius: 3px;
 				height: 100%;
@@ -81,16 +74,14 @@
 				<div>
 					<input id="show-listings" type="button" value="Show Listings">
 					<input id="hide-listings" type="button" value="Hide Listings">
-					<hr>
+
 					<span class="text"> Draw a shape to search within it for homes!</span>
 					<input id="toggle-drawing" type="button" value="Drawing Tools">
 				</div>
-				<hr>
 				<div>
 					<input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!">
 					<input id="zoom-to-area" type="button" value="Zoom">
 				</div>
-				<hr>
 				<div>
 					<span class="text"> Within </span>
 					<select id="max-duration">
@@ -109,7 +100,6 @@
 					<input id="search-within-time-text" type="text" placeholder="Ex: Google Office NYC or 75 9th Ave, New York, NY">
 					<input id="search-within-time" type="button" value="Go">
 				</div>
-				<hr>
 				<div>
 					<span class="text">Search for Nearby Places:</span>
 					<input id="places-search" type="text" placeholder="Ex: Pizza delivery in NYC">
