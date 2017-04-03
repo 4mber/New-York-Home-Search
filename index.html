@@ -20,13 +20,14 @@
 			h1 {
 				font-family: 'Shrikhand', cursive;
 				letter-spacing: 1px;
-				font-size: 24px;
-				margin: 0 0 10px 0;
+				font-size: 28px;
+				margin: 40px 0 0 0;
 				text-align: center;
 			}
 			#hide-listings,
 			#show-listings {
 				width: 48%;
+				margin-bottom: 50px;
 			}
 			#map {
 				bottom: 0px;
@@ -74,18 +75,20 @@
 			<div class="options-box">
 				<h1>Your New NYC Home!</h1>
 				<div>
-					<input id="show-listings" type="button" value="Show Listings">
-					<input id="hide-listings" type="button" value="Hide Listings">
-
-					<span class="text"> Draw a shape to search within it for homes!</span>
+					<input id="show-listings" type="button" value="Show All Listings">
+					<input id="hide-listings" type="button" value="Hide All Listings">
+					<hr>
+					<span class="text"> OR, draw a shape to search within it for homes!</span>
 					<input id="toggle-drawing" type="button" value="Drawing Tools">
 				</div>
 				<div>
-					<input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!">
+					<hr>
+					<input id="zoom-to-area-text" type="text" placeholder="OR, enter your favorite area!">
 					<input id="zoom-to-area" type="button" value="Zoom">
 				</div>
 				<div>
-					<span class="text"> Within </span>
+					<hr>
+					<span class="text"> OR, Find Listings Within </span>
 					<select id="max-duration">
 						<option value="10">10 min</option>
 						<option value="15">15 min</option>
@@ -103,6 +106,7 @@
 					<input id="search-within-time" type="button" value="Go">
 				</div>
 				<div>
+					<hr>
 					<span class="text">Search for Nearby Places:</span>
 					<input id="places-search" type="text" placeholder="Ex: Pizza delivery in NYC">
 					<input id="go-places" type="button" value="Go">
