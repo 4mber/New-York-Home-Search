@@ -6,14 +6,14 @@
 			html,
 			body {
 				font-family: 'Helvetica Neue', sans-serif;
-				font-weight: lighter;
 				height: 100%;
 				margin: 0;
 				padding: 0;
 			}
 			.container {
-				height: 100%;
+				height: 100vh;
 				position: relative;
+				overflow: hidden;
 			}
 			input {
 				font-size: 12px;
@@ -22,7 +22,7 @@
 				font-family: 'Shrikhand', cursive;
 				letter-spacing: 1px;
 				font-size: 28px;
-				margin: 40px 0 0 0;
+				margin-top: 10px;
 				text-align: center;
 				text-shadow: 2px 2px 5px rgba(113, 114, 179, 0.47);
 			}
@@ -58,7 +58,7 @@
       				width: 84%;
       			}
       			.text {
-     		   		font-size: 14px;
+     		   		font-size: 13px;
       			}
 			#toggle-drawing {
 				width: 13%;
@@ -66,6 +66,8 @@
 			}
 			#zoom-to-area-text {
 				width: 70%;
+				margin-top: 20px;
+				margin-bottom: 20px;
 			}
 			#zoom-to-area {
 				width: 24%;
@@ -106,7 +108,7 @@
 						<option value="TRANSIT">transit ride</option>
 					</select>
 					<span class="text">of</span>
-					<input id="search-within-time-text" type="text" placeholder="Ex: Google Office NYC or 75 9th Ave, New York, NY">
+					<input id="search-within-time-text" type="text" placeholder="Ex: 75 9th Ave, New York, NY...">
 					<input id="search-within-time" type="button" value="Go">
 				</div>
 				<div>
