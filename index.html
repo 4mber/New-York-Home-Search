@@ -78,6 +78,31 @@
    				margin-bottom: 30px;
    				width: 80%;
 			}
+			footer {
+				position: absolute;
+				bottom: 0;
+				z-index: 3;
+				max-width: 200px;
+				padding-left: 30px;
+				padding-bottom: 10px;
+			}
+			.icon {
+				width: 35px;
+			}
+			
+			/* Responsiveness */
+			@media only screen and (max-width : 670px) {
+				footer {
+					bottom: -250px;
+				}
+				.options-box {
+					width: 100vw;
+					margin-top: 60vh;		
+				}
+				#map {
+					height: 60%;
+				}
+			}
 		</style>
 	</head>
 	<body>
